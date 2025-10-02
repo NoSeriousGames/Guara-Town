@@ -1,0 +1,16 @@
+{
+    "name": "GuaraTower.Arena",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5944f0cb88ad26a4fb988d496550d612"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

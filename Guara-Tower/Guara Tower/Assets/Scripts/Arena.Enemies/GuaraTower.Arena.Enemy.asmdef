@@ -1,0 +1,17 @@
+{
+    "name": "GuaraTower.Arena.Enemy",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5944f0cb88ad26a4fb988d496550d612",
+        "GUID:1a7a964c27f115747acd3c2f3ab9c11d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
