@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6412957370795566576}
   - component: {fileID: 4250058973914311596}
   - component: {fileID: 3972241544531900335}
-  - component: {fileID: 4521599506817601685}
+  - component: {fileID: 8712975526181386043}
   m_Layer: 0
   m_Name: Abstract Enemy
   m_TagString: Untagged
@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Mode: 1
     m_Element: 0
     m_Source: 2
-  m_AttackRange: 1
+  m_AttackRange: 10.2
   m_AttackCoolDown: 2
 --- !u!114 &3972241544531900335
 MonoBehaviour:
@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0561f97bc1c6f4489a7c44afa2e7ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DistanceLimit: 0.8
+  m_DistanceLimit: 10
   m_MoveSpeed: 5
---- !u!95 &4521599506817601685
+--- !u!95 &8712975526181386043
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555514724373369570}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: c9939a6d0b01c054d9459c116fe1cdef, type: 3}
   m_Controller: {fileID: 9100000, guid: a4b08a5407701b7439621b2fed0584e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

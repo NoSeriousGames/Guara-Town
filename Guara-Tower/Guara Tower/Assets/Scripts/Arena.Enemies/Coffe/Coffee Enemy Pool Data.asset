@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6617a104ba368724491d363dee47d00f, type: 3}
   m_Name: Coffee Enemy Pool Data
   m_EditorClassIdentifier: 
-  m_Prefab: {fileID: 1555514724373369570, guid: 9d908595df4999e4ea3d23dc9be2fe23, type: 3}
+  m_Prefab: {fileID: 4222465842550248532, guid: 4eb9e602eef7c8d4ca6ac0483b839e6e, type: 3}
   m_PoolSize: 5
   m_ExpandablePool: 1
   m_DestroyExtraObjectsAfterUse: 0
