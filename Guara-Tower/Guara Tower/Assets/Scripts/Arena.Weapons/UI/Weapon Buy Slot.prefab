@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &631929085852223430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -829
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771758687853515566, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_Name
+      value: Weapon Buy Slot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3771758687853515566, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5861250517974061365}
+  m_SourcePrefab: {fileID: 100100000, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+--- !u!1 &4364809016777708776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3771758687853515566, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5861250517974061365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364809016777708776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f228d15d5db264a8a951de147f244b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Icon: {fileID: 8650854795586742512}
+  m_Title: {fileID: 8368144508144978755}
+  m_Weapon: {fileID: 0}
+--- !u!114 &8368144508144978755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8999475459501296773, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8650854795586742512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8127610559691173686, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

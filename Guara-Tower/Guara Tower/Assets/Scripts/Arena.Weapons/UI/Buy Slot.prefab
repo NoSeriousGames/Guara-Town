@@ -206,9 +206,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044380390739805363, guid: 3b03e0ca51b80e044ae47cb5c0e459e3, type: 3}
       propertyPath: m_text
-      value: 'Arrow
-
-'
+      value: "Lan\xE7a Chamas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044380390739805363, guid: 3b03e0ca51b80e044ae47cb5c0e459e3, type: 3}
+      propertyPath: m_fontSize
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044380390739805363, guid: 3b03e0ca51b80e044ae47cb5c0e459e3, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044380390739805363, guid: 3b03e0ca51b80e044ae47cb5c0e459e3, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
