@@ -1,7 +1,9 @@
 using GuaraTower.Core.Interface;
+using MigalhaSystem.Extensions;
 using UnityEngine;
 
 namespace GuaraTower.Arena.Enemies {
+
     public class EnemyMovimentBehaviour : MonoBehaviour {
 
         IEnemyTarget m_EnemyTarget;
@@ -14,7 +16,7 @@ namespace GuaraTower.Arena.Enemies {
 
             if (EnemyTarget.TargetDistance <= m_DistanceLimit) return;
             transform.position += EnemyTarget.TargetDir * m_MoveSpeed * Time.deltaTime;
-
+            transform.LookAt2D(EnemyTarget.PlayerTarget.GetTransform());
         }
 
     }
