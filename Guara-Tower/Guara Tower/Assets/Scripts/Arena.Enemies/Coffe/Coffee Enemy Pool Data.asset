@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6617a104ba368724491d363dee47d00f, type: 3}
+  m_Name: Coffee Enemy Pool Data
+  m_EditorClassIdentifier: 
+  m_Prefab: {fileID: 1555514724373369570, guid: 9d908595df4999e4ea3d23dc9be2fe23, type: 3}
+  m_PoolSize: 5
+  m_ExpandablePool: 1
+  m_DestroyExtraObjectsAfterUse: 0
+  m_ExtraObjectsAllowed: 0
+  m_RemoveIdlePool: 1
+  m_IdlePoolLifeTime: 30
+  m_IsFatherPool: 0
+  m_PoolFather: {fileID: 0}
