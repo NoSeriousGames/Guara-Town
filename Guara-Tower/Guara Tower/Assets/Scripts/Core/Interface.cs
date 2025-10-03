@@ -28,6 +28,17 @@ namespace GuaraTower.Core.Data {
 
     }
 
+    [System.Serializable]
+    public struct LevelStatus {
+
+        public float m_BaseValue;
+        public float[] m_AditionalByLevel;
+
+        public float GetCurrentValue(int _Level) {
+            return m_BaseValue + (_Level == 0 ? 0 : m_AditionalByLevel[_Level - 1]);
+        }
+
+    }
 
 }
 
@@ -71,5 +82,11 @@ namespace GuaraTower.Core.Interface {
     }
 
     public interface IIgnoreAim { }
+
+    public interface IProjectile {
+
+        public void Initialize(DamageData _DamageData, float _KnockBackForce, int _RicochetAmount);
+
+    }
 
 }
