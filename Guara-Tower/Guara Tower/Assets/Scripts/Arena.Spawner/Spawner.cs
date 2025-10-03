@@ -62,7 +62,7 @@ namespace GuaraTower.Arena.Spawner {
                     _Enemy = m_SpawnData.m_EnemyPool.PullObject(_SpawnPosition, Quaternion.identity);
                     _Enemy.GetComponent<IEnemyTarget>().GetLifeSystem().Initialize(1 + (spawnActiveTime/10f) * .2f);
 
-                    m_SpawnTime += m_SpawnData.m_SpawnCurve.Evaluate(spawnActiveTime);
+                    m_SpawnTime += 1f/m_SpawnData.m_SpawnCurve.Evaluate(spawnActiveTime);
                     return true;
 
                 }
@@ -86,23 +86,6 @@ namespace GuaraTower.Arena.Spawner {
 
         }
 
-        #region SpawnPosi
-        Vector3 m_LastSpawnedPosi;
-
-        public Vector3 GetSpawnPosition() {
-
-            int side = (m_Random.NextDouble() > 0.5f) ? 1 : -1;
-            int upDown = m_Random.NextInt(-1,2);
-
-            Vector3 a = new Vector3(m_VerticalSize.x * side, m_VerticalSize.y, m_VerticalSize.z * (upDown == 0 ? 1 : upDown));
-            Vector3 b = new Vector3((m_VerticalSize.x * side) + (m_HorizontalWidth * (upDown == 0 ? 0 : 1) * side * -1), m_VerticalSize.y, m_VerticalSize.z * (upDown == 0? -1 : upDown));
-
-            m_LastSpawnedPosi = new Vector3(m_Random.NextFloat(a.x, b.x), a.y, m_Random.NextFloat(a.z, b.z));
-            return m_LastSpawnedPosi;
-
-        }
-        #endregion
-
         private void Update() {
 
             SpawnEnemy();
@@ -125,6 +108,21 @@ namespace GuaraTower.Arena.Spawner {
 
         }
 
+        #region SpawnPosi
+
+        public Vector3 GetSpawnPosition() {
+
+            int side = (m_Random.NextDouble() > 0.5f) ? 1 : -1;
+            int upDown = m_Random.NextInt(-1,2);
+
+            Vector3 a = new Vector3(m_VerticalSize.x * side, m_VerticalSize.y, m_VerticalSize.z * (upDown == 0 ? 1 : upDown));
+            Vector3 b = new Vector3((m_VerticalSize.x * side) + (m_HorizontalWidth * (upDown == 0 ? 0 : 1) * side * -1), m_VerticalSize.y, m_VerticalSize.z * (upDown == 0? -1 : upDown));
+
+            return new Vector3(m_Random.NextFloat(a.x, b.x), a.y, m_Random.NextFloat(a.z, b.z));
+
+        }
+        #endregion
+
         private void OnDrawGizmosSelected() {
 
             Gizmos.color = Color.red;
@@ -137,11 +135,6 @@ namespace GuaraTower.Arena.Spawner {
 
             Gizmos.DrawLine(Vector3.Scale(m_VerticalSize, new Vector3(-1, 1, 1)), Vector3.Scale(m_VerticalSize, new Vector3(-1,1,1)) + new Vector3(m_HorizontalWidth, 0, 0));
             Gizmos.DrawLine(Vector3.Scale(m_VerticalSize, new Vector3(-1, 1, -1)), Vector3.Scale(m_VerticalSize, new Vector3(-1,1,-1)) + new Vector3(m_HorizontalWidth, 0, 0));
-
-            if (m_LastSpawnedPosi == Vector3.zero) return;
-
-            Gizmos.color = Color.blue;
-            Gizmos.DrawSphere(m_LastSpawnedPosi, 0.5f);
 
         }
 
