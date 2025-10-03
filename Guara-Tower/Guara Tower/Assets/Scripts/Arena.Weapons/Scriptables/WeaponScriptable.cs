@@ -1,3 +1,4 @@
+using GuaraTower.Core.Data;
 using UnityEngine;
 
 [System.Serializable]
