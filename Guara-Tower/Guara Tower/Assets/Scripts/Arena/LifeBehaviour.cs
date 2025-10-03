@@ -7,8 +7,8 @@ namespace GuaraTower.Arena {
     public class LifeBehaviour : MonoBehaviour, ILifeSystem {
 
         public float m_StartLife;
-        public float m_MaxLife;
-        public float m_CurrentLife;
+        private float m_MaxLife;
+        private float m_CurrentLife;
 
         public void Initialize(float _LifeMultiplier = 1) {
 
@@ -31,7 +31,7 @@ namespace GuaraTower.Arena {
 
             _DamageTaken = _DamageData;
 
-            if (IsAlive()) return false;
+            if (!IsAlive()) return false;
 
             m_CurrentLife -= _DamageData.m_Damage;
 

@@ -1,13 +1,13 @@
 {
-    "name": "GuaraTower.Arena.Enemy",
+    "name": "Game.Utilities.PoolManager.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:5944f0cb88ad26a4fb988d496550d612",
-        "GUID:1a7a964c27f115747acd3c2f3ab9c11d",
-        "GUID:bd9527ac572d15a4f89c81ddd4adc6ea",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+        "GUID:06c9cf69892b03f42b9f510ad0d6a04a",
+        "GUID:910f82c0e27088641ae520d7df349013"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

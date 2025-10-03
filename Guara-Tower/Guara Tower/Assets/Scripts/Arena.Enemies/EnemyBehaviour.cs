@@ -10,12 +10,24 @@ namespace GuaraTower.Arena.Enemies {
             return m_LifeSystem ??= GetComponent<ILifeSystem>();
         }
 
-    }
+        public Transform GetTransform() {
+            return transform;
+        }
 
-    public class EnemyMovimentBehaviour : MonoBehaviour {
+        public IPlayerTarget PlayerTarget { get => PlayerHelper.GetPlayerTarget(); }
 
-        public Vector3 m_FinalDestination;
-        public float m_MoveSpeed;
+        public Vector3 TargetDir { get => m_TargetDir; }
+        private Vector3 m_TargetDir = Vector3.one;
+        public float TargetDistance { get => m_TargetDistance; }
+        private float m_TargetDistance = 0;
+
+        private void Update() {
+
+            var dirNonNormalized = (PlayerTarget.GetTransform().position - transform.position);
+            m_TargetDir = dirNonNormalized.normalized;
+            m_TargetDistance = dirNonNormalized.sqrMagnitude;
+
+        }
 
     }
 

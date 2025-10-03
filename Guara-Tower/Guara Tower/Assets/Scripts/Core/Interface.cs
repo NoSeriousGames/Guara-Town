@@ -56,11 +56,20 @@ namespace GuaraTower.Core.Interface {
     public interface ITarget {
 
         ILifeSystem GetLifeSystem();
+        Transform GetTransform();
 
     }
 
     public interface IPlayerTarget : ITarget { }
 
-    public interface IEnemyTarget : ITarget { }
+    public interface IEnemyTarget : ITarget {
+
+        public IPlayerTarget PlayerTarget { get; }
+        public Vector3 TargetDir { get; }
+        public float TargetDistance { get; }
+
+    }
+
+    public interface IIgnoreAim { }
 
 }
