@@ -91,4 +91,10 @@ namespace GuaraTower.Core.Interface {
 
     }
 
+    public interface IWeaponController {
+
+        void Initialize();
+
+    }
+
 }

@@ -20,12 +20,6 @@ MonoBehaviour:
   - m_Icon: {fileID: 0}
     m_Type: 0
     m_BaseValues: 1
-    m_Values:
-    - 1.5
-    - 2
-    - 4
-    - 8
-    - 16
     m_Prices:
     - 10
     - 50
@@ -35,11 +29,6 @@ MonoBehaviour:
   - m_Icon: {fileID: 0}
     m_Type: 1
     m_BaseValues: 1
-    m_Values:
-    - 1.5
-    - 2
-    - 3
-    - 5
     m_Prices:
     - 15
     - 60
@@ -48,10 +37,6 @@ MonoBehaviour:
   - m_Icon: {fileID: 0}
     m_Type: 2
     m_BaseValues: 1
-    m_Values:
-    - 2
-    - 3
-    - 5
     m_Prices:
     - 4
     - 100
@@ -59,20 +44,14 @@ MonoBehaviour:
   - m_Icon: {fileID: 0}
     m_Type: 3
     m_BaseValues: 0
-    m_Values:
-    - 1
-    - 2
     m_Prices:
     - 75
     - 250
   - m_Icon: {fileID: 0}
     m_Type: 3
     m_BaseValues: 0
-    m_Values:
-    - 1
-    - 2
-    - 3
     m_Prices:
     - 65
     - 180
     - 450
+  m_Controller: {fileID: 3461519895721515371, guid: e49563620d5a1b349ac2f71d985cd1f9, type: 3}

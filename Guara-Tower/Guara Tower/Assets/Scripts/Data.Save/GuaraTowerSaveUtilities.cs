@@ -12,6 +12,8 @@ namespace GuaraTower.Data.Save {
 
     public static class WeaponSaveUtil {
 
+        public static bool HasWeapon(int _WeaponID) => SaveDataUtil.SaveData.m_WeaponList.TryFind((x)=>x.m_WeaponID == _WeaponID, out int _);
+
         public static int GetUpgradeLevel(int _WeaponID, int _UpgradeID) {
 
             if (!SaveDataUtil.SaveData.m_WeaponList.TryFind((x)=>x.m_WeaponID == _UpgradeID, out Weapon _Weapon)) return 0;
@@ -22,12 +24,7 @@ namespace GuaraTower.Data.Save {
 
         public static int AddUpgradeLevel(int _WeaponID, int _UpgradeID) {
 
-            if (!SaveDataUtil.SaveData.m_WeaponList.TryFind((x) => x.m_WeaponID == _UpgradeID, out Weapon _Weapon)) {
-
-                _Weapon = new Weapon();
-                SaveDataUtil.SaveData.m_WeaponList.Add(_Weapon);
-
-            }
+            if (!SaveDataUtil.SaveData.m_WeaponList.TryFind((x) => x.m_WeaponID == _UpgradeID, out Weapon _Weapon)) return 0;
 
             if (!_Weapon.m_UpgradeList.TryFind((x)=>x.m_UpgradeID == _UpgradeID, out Upgrades _Upgrades)) {
 
