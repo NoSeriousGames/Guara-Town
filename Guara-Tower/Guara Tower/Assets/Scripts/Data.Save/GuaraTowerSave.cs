@@ -2,12 +2,15 @@ using System.Collections.Generic;
 
 namespace GuaraTower.Data.Save {
 
+    [System.Serializable]
     public class GuaraTowerSaveData {
 
+        [System.Serializable]
         public class Weapon {
 
             public int m_WeaponID;
 
+            [System.Serializable]
             public class Upgrades {
 
                 public int m_UpgradeID;

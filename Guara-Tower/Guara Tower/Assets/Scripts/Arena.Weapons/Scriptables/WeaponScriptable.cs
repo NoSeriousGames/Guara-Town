@@ -1,4 +1,3 @@
-using GuaraTower.Core.Data;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +12,7 @@ public class WeaponScriptable : ScriptableObject
     public string m_Description;
     public Sprite m_Icon;
     public List<Upgrade> m_Upgrades = new();
+    public GameObject m_Controller;
     
     public enum UpgradeType
     {

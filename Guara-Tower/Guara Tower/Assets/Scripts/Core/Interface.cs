@@ -61,8 +61,15 @@ namespace GuaraTower.Core.Interface {
     }
 
     public interface ITakeDamage {
-        bool TakeDamage(DamageData _DamageData);
-        bool TakeDamage(DamageData _DamageData, out DamageData _DamageTaken);
+        bool TakeDamage(DamageData _DamageData, bool _ShowDamageText = true);
+        bool TakeDamage(DamageData _DamageData, bool _ShowDamageText, out DamageData _DamageTaken);
+
+    }
+
+    public interface IKnockbackable {
+
+        void KnockBack(Vector2 _HitPosition, float _KnockbackForce, float _KnockbackDuration, int _ForceKnockPriority = 0);
+        void KnockBackByDirection(Vector2 _Direction, float _KnockbackForce, float _KnockbackDuration, int _ForceKnockPriority = 0);
 
     }
 
@@ -88,6 +95,12 @@ namespace GuaraTower.Core.Interface {
     public interface IProjectile {
 
         public void Initialize(DamageData _DamageData, float _KnockBackForce, int _RicochetAmount);
+
+    }
+
+    public interface IWeaponController {
+
+        void Initialize();
 
     }
 

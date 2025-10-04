@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8612410696319359559}
   - component: {fileID: 555096211863820867}
   - component: {fileID: 1285891095171087808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,6 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c565a19ef5c3948ba5eaa8b88dc4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_WeaponList:
+  - {fileID: 11400000, guid: cee6163135c6cb34089e28c8c6721ec4, type: 2}
 --- !u!114 &1285891095171087808
 MonoBehaviour:
   m_ObjectHideFlags: 0

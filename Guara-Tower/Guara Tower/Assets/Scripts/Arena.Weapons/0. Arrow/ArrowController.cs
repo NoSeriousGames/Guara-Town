@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace GuaraTower.Arena.Weapons {
 
-    public class ArrowController : MonoBehaviour {
+    public class ArrowController : MonoBehaviour, IWeaponController {
 
         private bool m_Initialized = false;
 
@@ -59,9 +59,11 @@ namespace GuaraTower.Arena.Weapons {
 
         private void SpawnProjectile(Vector3 _Dir, float _ExtraAngle) {
 
-            var projectile = m_ProjectilePoolData.PullObject();
-            projectile.transform.right = _Dir;
+            var projectile = m_ProjectilePoolData.PullObject(transform.position, Quaternion.identity);
+
+            projectile.transform.forward = _Dir;
             projectile.transform.eulerAngles += new Vector3(0, _ExtraAngle, 0);
+
             projectile.GetComponent<IProjectile>().Initialize(
                 new DamageData(m_DamageLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.Damage)), DamageMode.Projectile, _Source: DamageSource.Player),
                 m_KnockBackLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.KnockBack)),

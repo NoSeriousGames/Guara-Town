@@ -23,11 +23,11 @@ namespace GuaraTower.Arena {
 
         public Transform GetTransform() => transform;
 
-        public bool TakeDamage(DamageData _DamageData) {
-            return TakeDamage(_DamageData, out _);
+        public bool TakeDamage(DamageData _DamageData, bool _ShowDamageText = true) {
+            return TakeDamage(_DamageData, _ShowDamageText, out _);
         }
 
-        public bool TakeDamage(DamageData _DamageData, out DamageData _DamageTaken) {
+        public bool TakeDamage(DamageData _DamageData, bool _ShowDamageText, out DamageData _DamageTaken) {
 
             _DamageTaken = _DamageData;
 
