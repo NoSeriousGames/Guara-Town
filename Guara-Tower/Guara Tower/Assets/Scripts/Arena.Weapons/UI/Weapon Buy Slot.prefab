@@ -8,6 +8,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5861250517974061365}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WeaponBuySlot, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3485198795601596681, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -119,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Icon: {fileID: 8650854795586742512}
   m_Title: {fileID: 8368144508144978755}
+  m_Controller: {fileID: 0}
   m_Weapon: {fileID: 0}
 --- !u!114 &8368144508144978755 stripped
 MonoBehaviour:

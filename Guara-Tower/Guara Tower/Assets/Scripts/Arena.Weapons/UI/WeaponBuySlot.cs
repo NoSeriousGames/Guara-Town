@@ -11,4 +11,10 @@ public class WeaponBuySlot : BuySlot
         m_Title.text = m_Weapon.m_Title;
     }
 
+    public override void Click()
+    {
+        base.Click();
+        m_Controller.ShowWeaponInfo(m_Weapon);
+    }
+
 }
