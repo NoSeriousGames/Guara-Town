@@ -40,6 +40,8 @@ namespace GuaraTower.Core.Data {
 
     }
 
+    public enum ArrowUpgrades { Damage = 0, FireRate = 1, ProjectileAmount = 2, KnockBack = 3, Ricochet = 4}
+
 }
 
 namespace GuaraTower.Core.Interface {
