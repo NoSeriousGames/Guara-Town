@@ -16,7 +16,7 @@ namespace GuaraTower.Arena.Enemies {
 
             if (EnemyTarget.TargetDistance <= m_DistanceLimit) return;
             transform.position += EnemyTarget.TargetDir * m_MoveSpeed * Time.deltaTime;
-            transform.LookAt2D(EnemyTarget.PlayerTarget.GetTransform());
+            transform.LookAt(EnemyTarget.PlayerTarget.GetTransform());
         }
 
     }
