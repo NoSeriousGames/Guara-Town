@@ -7,6 +7,8 @@ public class Shop : MonoBehaviour
 {
     [SerializeField] Transform m_WeaponsSlotPivot;
     [SerializeField] Transform m_UpgradesSlotPivot;
+    [SerializeField] GameObject m_Passives;
+    [SerializeField] BuySlot m_PassiveButton;
     [SerializeField] List<WeaponScriptable> m_Weapons;
     [SerializeField] GameObject m_WeaponBuySlotPrefab;
     [SerializeField] GameObject m_UpgradeSlotPrefab;
@@ -35,6 +37,10 @@ public class Shop : MonoBehaviour
     public void ShowWeaponInfo(WeaponBuySlot _Weapon)
     {
 
+        m_UpgradesSlotPivot.gameObject.SetActive(true);
+        m_Passives.SetActive(false);
+        m_PassiveButton.Deselect();
+
         m_WeaponSlots.ForEach((x) => x.Deselect());
         _Weapon.Select();
         m_Title.text = _Weapon.m_Weapon.m_Title;
@@ -50,6 +56,16 @@ public class Shop : MonoBehaviour
             _UpgradeSlot.Initialize();
             m_UpgradeSlots.Add(_UpgradeSlot);
         }
+
+    }
+
+    public void ShowPassives()
+    {
+
+        m_WeaponSlots.ForEach((x) => x.Deselect());
+        m_PassiveButton.Select();
+        m_UpgradesSlotPivot.gameObject.SetActive(false);
+        m_Passives.SetActive(true);
 
     }
 

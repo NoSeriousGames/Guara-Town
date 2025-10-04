@@ -21,4 +21,16 @@ public class BuySlot : MonoBehaviour
 
     }
 
+    public void Select()
+    {
+        m_ActivedButton.gameObject.SetActive(true);
+        m_DeactivedButton.gameObject.SetActive(false);
+    }
+
+    public void Deselect()
+    {
+        m_ActivedButton.gameObject.SetActive(false);
+        m_DeactivedButton.gameObject.SetActive(true);
+    }
+
 }
