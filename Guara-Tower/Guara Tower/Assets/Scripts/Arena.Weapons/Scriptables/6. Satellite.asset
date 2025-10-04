@@ -16,3 +16,27 @@ MonoBehaviour:
   m_Title: Satelite
   m_Description: Fica girando ao redor e causando dano em quem toca
   m_Icon: {fileID: 21300000, guid: 75f2a5b8317322341a70f15f65e62703, type: 3}
+  m_Upgrades:
+  - m_Icon: {fileID: 0}
+    m_Type: 0
+    m_BaseValues: 2
+    m_Prices:
+    - 80
+    - 240
+    - 750
+    - 1600
+  - m_Icon: {fileID: 0}
+    m_Type: 2
+    m_BaseValues: 2
+    m_Prices:
+    - 200
+    - 750
+    - 1400
+    - 2000
+  - m_Icon: {fileID: 0}
+    m_Type: 8
+    m_BaseValues: 100
+    m_Prices:
+    - 200
+    - 600
+    - 1000

@@ -16,3 +16,27 @@ MonoBehaviour:
   m_Title: Laser
   m_Description: "Atravessa todos inimigos em uma dire\xE7\xE3o"
   m_Icon: {fileID: 21300000, guid: 6e3a0602e560f3a4093d09e128726cd2, type: 3}
+  m_Upgrades:
+  - m_Icon: {fileID: 0}
+    m_Type: 0
+    m_BaseValues: 2
+    m_Prices:
+    - 70
+    - 200
+    - 500
+    - 1200
+  - m_Icon: {fileID: 0}
+    m_Type: 1
+    m_BaseValues: 1
+    m_Prices:
+    - 120
+    - 300
+    - 650
+    - 1000
+  - m_Icon: {fileID: 0}
+    m_Type: 9
+    m_BaseValues: 1
+    m_Prices:
+    - 80
+    - 320
+    - 950
