@@ -662,6 +662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1691868170}
+  - component: {fileID: 1691868171}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -678,12 +679,25 @@ Transform:
   m_GameObject: {fileID: 1691868169}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7234344, y: 2.6769342, z: 3.9637961}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691868171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691868169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e559229c19fe44f49ac85e32057c46ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DDOL: 0
 --- !u!1001 &7102957834795116281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -751,15 +765,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 867761847926040972, guid: e49563620d5a1b349ac2f71d985cd1f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.29394072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 867761847926040972, guid: e49563620d5a1b349ac2f71d985cd1f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.376118
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 867761847926040972, guid: e49563620d5a1b349ac2f71d985cd1f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.957871
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 867761847926040972, guid: e49563620d5a1b349ac2f71d985cd1f9, type: 3}
       propertyPath: m_LocalRotation.w
