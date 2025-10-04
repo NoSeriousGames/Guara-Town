@@ -120,6 +120,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon Buy Slot
       objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5861250517974061365}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WeaponBuySlot, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -128,6 +156,28 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5861250517974061365}
   m_SourcePrefab: {fileID: 100100000, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+--- !u!114 &1004781946098989657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 375104975740681631, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3986031837307783135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4581333937721524249, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4364809016777708776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3771758687853515566, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
@@ -146,9 +196,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Icon: {fileID: 8650854795586742512}
-  m_Title: {fileID: 8368144508144978755}
+  m_Title:
+  - {fileID: 8368144508144978755}
+  - {fileID: 3986031837307783135}
   m_Controller: {fileID: 0}
+  m_ActivedButton: {fileID: 1004781946098989657}
+  m_DeactivedButton: {fileID: 5656826888397158085}
   m_Weapon: {fileID: 0}
+--- !u!114 &5656826888397158085 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5063178696039330051, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}
+  m_PrefabInstance: {fileID: 631929085852223430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8368144508144978755 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8999475459501296773, guid: 39f86d67876fc6d47bcd876c7de8b129, type: 3}

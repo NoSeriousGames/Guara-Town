@@ -25,15 +25,17 @@ public class Shop : MonoBehaviour
             m_WeaponSlots.Add(_WeaponSlot);
         }
 
-        ShowWeaponInfo(m_WeaponSlots[0].m_Weapon);
+        ShowWeaponInfo(m_WeaponSlots[0]);
 
     }
 
-    public void ShowWeaponInfo(WeaponScriptable _Weapon)
+    public void ShowWeaponInfo(WeaponBuySlot _Weapon)
     {
 
-        m_Title.text = _Weapon.m_Title;
-        m_Description.text = _Weapon.m_Description;
+        m_WeaponSlots.ForEach((x) => x.Deselect());
+        _Weapon.Select();
+        m_Title.text = _Weapon.m_Weapon.m_Title;
+        m_Description.text = _Weapon.m_Weapon.m_Description;
 
     }
 
