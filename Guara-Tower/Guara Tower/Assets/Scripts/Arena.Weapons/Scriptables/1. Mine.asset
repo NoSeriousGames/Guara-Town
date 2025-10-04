@@ -18,7 +18,7 @@ MonoBehaviour:
     se aproxima"
   m_Icon: {fileID: 21300000, guid: 691300bf4c6aa3c46ad1150e8f581527, type: 3}
   m_Upgrades:
-  - m_Icon: {fileID: 0}
+  - m_Icon: {fileID: 21300000, guid: b7722e554ccd37b4d8fbf9e7d5f53ca3, type: 3}
     m_Type: 0
     m_BaseValues: 2
     m_Prices:
