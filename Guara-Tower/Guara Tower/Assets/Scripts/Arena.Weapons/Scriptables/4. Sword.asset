@@ -16,3 +16,32 @@ MonoBehaviour:
   m_Title: Espada
   m_Description: "Atinge um inimigo aleat\xF3rio"
   m_Icon: {fileID: 21300000, guid: 241cf8c68847108408c2ae30a5f6a24e, type: 3}
+  m_Upgrades:
+  - m_Icon: {fileID: 0}
+    m_Type: 0
+    m_BaseValues: 2
+    m_Prices:
+    - 70
+    - 200
+    - 400
+    - 800
+  - m_Icon: {fileID: 0}
+    m_Type: 1
+    m_BaseValues: 0.5
+    m_Prices:
+    - 150
+    - 500
+    - 1200
+  - m_Icon: {fileID: 0}
+    m_Type: 2
+    m_BaseValues: 1
+    m_Prices:
+    - 150
+    - 400
+    - 900
+  - m_Icon: {fileID: 0}
+    m_Type: 3
+    m_BaseValues: 0
+    m_Prices:
+    - 100
+    - 350

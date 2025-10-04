@@ -17,3 +17,27 @@ MonoBehaviour:
   m_Description: "Aparecem minas em locais aleat\xF3rios que explodem quando um inimigo
     se aproxima"
   m_Icon: {fileID: 21300000, guid: 691300bf4c6aa3c46ad1150e8f581527, type: 3}
+  m_Upgrades:
+  - m_Icon: {fileID: 0}
+    m_Type: 0
+    m_BaseValues: 2
+    m_Prices:
+    - 15
+    - 80
+    - 250
+    - 1200
+  - m_Icon: {fileID: 0}
+    m_Type: 1
+    m_BaseValues: 0.5
+    m_Prices:
+    - 50
+    - 200
+    - 750
+  - m_Icon: {fileID: 0}
+    m_Type: 5
+    m_BaseValues: 100
+    m_Prices:
+    - 70
+    - 160
+    - 320
+    - 600

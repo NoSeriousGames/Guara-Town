@@ -12,6 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e63acf5184a1f42ad8f6be271f231e, type: 3}
   m_Name: 0. Arrow
   m_EditorClassIdentifier: 
+  m_ID: 0
   m_Title: Flecha
   m_Description: "Atira em dire\xE7\xE3o ao inimigo mais pr\xF3ximo"
   m_Icon: {fileID: 21300000, guid: 532800774c4385649bac3d4e135e2a3c, type: 3}
+  m_Upgrades:
+  - m_Icon: {fileID: 0}
+    m_Type: 0
+    m_BaseValues: 1
+    m_Values:
+    - 1.5
+    - 2
+    - 4
+    - 8
+    - 16
+    m_Prices:
+    - 10
+    - 50
+    - 250
+    - 500
+    - 1000
+  - m_Icon: {fileID: 0}
+    m_Type: 1
+    m_BaseValues: 1
+    m_Values:
+    - 1.5
+    - 2
+    - 3
+    - 5
+    m_Prices:
+    - 15
+    - 60
+    - 200
+    - 650
+  - m_Icon: {fileID: 0}
+    m_Type: 2
+    m_BaseValues: 1
+    m_Values:
+    - 2
+    - 3
+    - 5
+    m_Prices:
+    - 4
+    - 100
+    - 500
+  - m_Icon: {fileID: 0}
+    m_Type: 3
+    m_BaseValues: 0
+    m_Values:
+    - 1
+    - 2
+    m_Prices:
+    - 75
+    - 250
+  - m_Icon: {fileID: 0}
+    m_Type: 3
+    m_BaseValues: 0
+    m_Values:
+    - 1
+    - 2
+    - 3
+    m_Prices:
+    - 65
+    - 180
+    - 450
