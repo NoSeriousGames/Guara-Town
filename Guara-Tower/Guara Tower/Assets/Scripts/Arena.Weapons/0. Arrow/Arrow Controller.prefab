@@ -44,19 +44,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9cd22ae7524caf44a4aa71e3e67a692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ProjectilePoolData: {fileID: 11400000, guid: 4af0884a209c73744a303f9de53b24eb, type: 2}
+  _WeaponData: {fileID: 11400000, guid: cee6163135c6cb34089e28c8c6721ec4, type: 2}
   m_DamageLevel:
-    m_BaseValue: 0
-    m_AditionalByLevel: []
+    m_BaseValue: 1
+    m_AditionalByLevel:
+    - 0.5
+    - 1
+    - 3
+    - 7
+    - 15
   m_FireRateLevel:
-    m_BaseValue: 0
-    m_AditionalByLevel: []
+    m_BaseValue: 1
+    m_AditionalByLevel:
+    - 0.5
+    - 1
+    - 2
+    - 4
   m_ProjectileAmountLevel:
-    m_BaseValue: 0
-    m_AditionalByLevel: []
+    m_BaseValue: 1
+    m_AditionalByLevel:
+    - 1
+    - 2
+    - 4
   m_KnockBackLevel:
     m_BaseValue: 0
-    m_AditionalByLevel: []
+    m_AditionalByLevel:
+    - 1
+    - 2
   m_RicochetLevel:
     m_BaseValue: 0
-    m_AditionalByLevel: []
+    m_AditionalByLevel:
+    - 1
+    - 2
+    - 3
+  m_ProjectilePoolData: {fileID: 11400000, guid: 4af0884a209c73744a303f9de53b24eb, type: 2}

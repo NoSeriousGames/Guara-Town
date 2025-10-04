@@ -26,7 +26,7 @@ namespace GuaraTower.Arena.Weapons {
         public void Initialize() {
 
             m_Initialized = true;
-            m_CurrentTime = m_FireRateLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.FireRate));
+            m_CurrentTime = 1f/m_FireRateLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.FireRate));
 
         }
 
@@ -37,7 +37,7 @@ namespace GuaraTower.Arena.Weapons {
             m_CurrentTime -= Time.deltaTime;
             if (m_CurrentTime > 0) return;
 
-            m_CurrentTime = m_FireRateLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.FireRate));
+            m_CurrentTime = 1f/m_FireRateLevel.GetCurrentValue(WeaponSaveUtil.GetUpgradeLevel(_WeaponData.m_ID, (int)ArrowUpgrades.FireRate));
 
             var enemyNearest = EnemiesHelper.GetNearest(transform.position, EnemiesHelper.AimFilter);
             var dir = Vector3.Scale(enemyNearest.GetTransform().position - transform.position, new Vector3(1, 0, 1)).normalized;

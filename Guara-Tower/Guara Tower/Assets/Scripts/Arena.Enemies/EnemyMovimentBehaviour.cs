@@ -1,5 +1,4 @@
 using GuaraTower.Core.Interface;
-using MigalhaSystem.Extensions;
 using UnityEngine;
 
 namespace GuaraTower.Arena.Enemies {
