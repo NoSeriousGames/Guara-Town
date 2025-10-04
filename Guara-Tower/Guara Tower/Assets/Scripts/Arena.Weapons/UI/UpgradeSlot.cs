@@ -2,17 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using static WeaponScriptable;
 
-public class BuySlot : MonoBehaviour
+public class UpgradeSlot : MonoBehaviour
 {
     public Image m_Icon;
-    public List<TMP_Text> m_Title;
+    public TMP_Text m_Title;
     [HideInInspector] public Shop m_Controller;
-    public Button m_ActivedButton;
-    public Button m_DeactivedButton;
+    [HideInInspector] public Upgrade m_Upgrade;
 
     public virtual void Initialize()
     {
+
+        m_Icon.sprite = m_Upgrade.m_Icon;
+        m_Title.text = m_Upgrade.m_Type.ToString();
 
     }
 

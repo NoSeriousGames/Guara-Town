@@ -17,7 +17,7 @@ MonoBehaviour:
   m_Description: "Ataca em cone o inimigo mais pr\xF3ximo"
   m_Icon: {fileID: 21300000, guid: ae125e6d1d7393f4baf48ec37a09bbc1, type: 3}
   m_Upgrades:
-  - m_Icon: {fileID: 0}
+  - m_Icon: {fileID: 21300000, guid: b7722e554ccd37b4d8fbf9e7d5f53ca3, type: 3}
     m_Type: 0
     m_BaseValues: 0.2
     m_Prices:

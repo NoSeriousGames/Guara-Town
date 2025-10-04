@@ -17,7 +17,7 @@ MonoBehaviour:
   m_Description: "Atinge um inimigo aleat\xF3rio"
   m_Icon: {fileID: 21300000, guid: 241cf8c68847108408c2ae30a5f6a24e, type: 3}
   m_Upgrades:
-  - m_Icon: {fileID: 0}
+  - m_Icon: {fileID: 21300000, guid: b7722e554ccd37b4d8fbf9e7d5f53ca3, type: 3}
     m_Type: 0
     m_BaseValues: 2
     m_Prices:
@@ -32,7 +32,7 @@ MonoBehaviour:
     - 150
     - 500
     - 1200
-  - m_Icon: {fileID: 0}
+  - m_Icon: {fileID: 21300000, guid: e4ea4c8c5c207ab42bcd76a77e865122, type: 3}
     m_Type: 2
     m_BaseValues: 1
     m_Prices:
